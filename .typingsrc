@@ -1,4 +1,0 @@
-{
-  "proxy": "http://<server>:<port>",
-  "rejectUnauthorized": false
-}
