@@ -1,12 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const mysql = require('mysql');
+const mysql = require('mysql2');
 const app = express();
 const path = require('path');
 app.use(express.static(path.join(__dirname, 'public')));
 
 const db = mysql.createConnection({
-  host: 'localhost',
+  host: 'mysql-service',
   user: 'root',
   password: 'mysqlpassword',
   database: 'todoapp'
